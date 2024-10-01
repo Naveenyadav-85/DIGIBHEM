@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Drawing Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button id="pencil" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\3d-rendering-ui-icon_23-2149182285.jpg" alt="Pencil Tool" class="tool-icon">
+        </button>
+        <button id="eraser" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\eraiser.jpg" alt="Eraser Tool" class="tool-icon">
+        </button>
+        <button id="fill" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\fill.jpg" alt="Fill Tool" class="tool-icon">
+        </button>
+        <button id="clear" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\clear2.jpg" alt="Clear Tool" class="tool-icon">
+        </button>
+        <input type="color" id="colorPicker" value="#000000">
+        <button id="undo" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\undo.jpg" alt="Undo Tool" class="tool-icon">
+        </button>
+        <button id="redo" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\redo.jpg" alt="Redo Tool" class="tool-icon">
+        </button>
+        <button id="save" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\save.jpg" alt="Save Tool" class="tool-icon">
+        </button>
+        <button id="load" class="tool-button">
+            <img src="C:\Users\Naveen\Downloads\load.jpg" alt="Load Tool" class="tool-icon">
+        </button>
+
+        <!-- Shapes -->
+        <div id="shapes-container">
+            <img src="C:\Users\Naveen\Downloads\shapes.jpg" alt="Shapes Tool" id="shapesIcon" class="tool-icon">
+            <select id="shapeSelector">
+                <option value="none">Shapes</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+            </select>
+        </div>
+
+        <!-- Brush Size -->
+        <div id="brushSize-container">
+            <img src="C:\Users\Naveen\Downloads\brushimage.jpg" alt="Brush Size" id="brushSizeIcon" class="tool-icon">
+            <label for="brushSize">Brush Size:</label>
+            <input type="range" id="brushSize" min="5" max="50" value="5">
+        </div>
+    </div>
+
+    <canvas id="drawingCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
